@@ -1,0 +1,65 @@
+* {box-sizing: border-box; padding: 0px; margin: 0px;}
+.colorAzul {background-color: #00669F;}
+header {width: 1520px;}
+.footer {color: white; 
+    text-align: center; 
+    width: 1520px;
+}
+.Descuento {background-color: #1cd1b0;}
+span {position: relative; 
+    color:white; 
+    bottom: 30px; 
+    left: 15px;}
+nav {background-color: black;}
+a {color: white;}
+
+body {display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+main {
+    width: 700px; 
+    height: 700px; 
+    display: flex; 
+    flex-direction: column; 
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+p{color: white;}
+
+h1 {color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;}
+
+.center {align-self: center;}
+
+form {display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+section {display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+    
+}
+
+articule {width: 250px; height: 100px;}
+hr {width: 250px;}
+.radio-checkbox {display: flex; flex-direction: column;}
+
+/* .uno {height: 100px; width: 190 px;}
+.dos {height: 200px; width: 190 px;} */
+

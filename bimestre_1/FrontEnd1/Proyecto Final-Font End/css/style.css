@@ -1,0 +1,413 @@
+/* Aplicación de estilos de forma general en toda la estructura/página web */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Aplicación de estilos agrupando propiedades comunes de varios elementos en una única regla CSS */
+
+nav, header, .listaHeader, .seccionPadel, .articulePadel, .seccionDiferenciasPros, .seccionDiferencias, .seccionMejorDelMes, .seccionMejorEquipoDelAño, footer, div, .listaFooter {
+    display: flex;
+}
+
+.seccionPadel, .articulePadel, .seccionDiferencias, .seccionMejorEquipoDelAño, .seccionDiferenciasPros, .seccionMejorDelMes, .listaFooter {
+    flex-direction: column;
+}
+
+.listaHeader, .seccionMejorDelMes, div {
+    justify-content: space-around;
+}
+
+.seccionMejorDelMes, .seccionMejorEquipoDelAño, footer {
+    align-items: center;
+}
+
+header, .seccionPadel, .seccionDiferenciasPros {
+    justify-content: space-between;
+}
+
+.botonPequeño, .seccionMejorDelMes, .seccionMejorEquipoDelAño {
+    text-align: center;
+}
+
+h4, .avatar {
+    position: relative;
+}
+
+/* Aplicación de estilos para definir las propiedades específicas necesarias para cada elemento */
+
+header {
+    margin: 60px 10vw;
+}
+
+.navegacionHeader {
+    color: #242E52;
+}
+
+nav {
+    width: 35vw;
+}
+
+.listaHeader {
+    width: 35vw;
+}
+
+.ocultar {
+    display: none;
+}
+
+button {
+    height: 44px;
+    color: white;
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+}
+
+.botonPequeño {
+    font-weight: bold;
+    width: 65px;
+}
+
+button:hover {
+    background-color: pink
+}
+
+.botonGrande {
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.seccionPadel {
+    width: 75.7vw;
+    height: 800px;
+    margin: 8.4vw 12.15vw;
+}
+
+.imagenPadel {
+    width: 75.7vw;
+}
+
+.articulePadel {
+    text-align: right;
+    align-items: flex-end;
+    width: 75.7vw;
+}
+
+.parrafoSeccionPadel {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #232C50;
+}
+
+.seccionCelesteBlanco {
+    background-color: #3CDDF3;
+    color:white;
+}
+
+.seccionDiferenciasPros {
+    height: 305px;
+    padding: 50px 60px 50px 25px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.seccionDiferencias {
+    height: 680px;
+    padding-left: 25px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    background-color: rgba(139, 72, 191, 0.3);
+    color: #323851;
+    height: 44px;
+    text-indent: 80px;
+    padding-top:12px;
+    border-radius: 50px 0px 0px 50px;
+    bottom: 44px;
+}
+
+.parrafoSeccionDiferencias {
+    padding-left: 15px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+    color: rgba(179, 178, 183, 1);
+}
+
+.seccionMejorDelMes {
+    height: 475px;
+    margin-top: 100px;
+}
+
+h5 {
+    color: #3F4868;
+    font-size: 1.1rem;
+}
+
+.avatar {
+    bottom: 30px;
+}
+
+.testimonios {
+    background-color:rgba(250, 250, 250, 1);
+    width: 445px;
+    color: #B9B9C1;
+}
+
+.parrafoSeccionMejorDelMes {
+    margin: 25px;
+}
+
+.seccionMejorEquipoDelAño {
+    justify-content: space-evenly;
+    height: 76vw;
+    padding-left: 85px;
+    padding-right: 85px; 
+}
+
+.h2seccionMejorEquipoDelAño {
+    font-size: 2.6rem;
+}
+
+p {
+    line-height: 25px;
+}
+
+.botonAzulOscuro {
+    background-color: #232851;
+}
+
+footer {
+    flex-direction: column-reverse;
+    background-color: black;
+}
+
+div {
+    width: 480px;
+}
+
+.logoFooter {
+    width: 110px;
+    height: 30 px;
+    margin: 50px 0px;
+}
+
+.menuFooter {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.listaFooter {
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 325px;
+    height: 140px;
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    background-color: red;
+    color:blueviolet;
+}
+
+.navegacionFooter {
+    color: white;
+}
+
+.derechosReservados {
+    color: #8C8C94;
+    order: -1;
+    margin-bottom: 50px;
+    font-size: 0.8rem;
+}
+
+form {
+    margin-top: 50px;
+}
+
+input {
+    height: 44px;
+    width: 300px;
+    border-radius: 100px;
+}
+
+input:focus {
+    color: red;
+    font-weight: bold;
+}
+
+/* MEDIAS QUERIS. Apartir de un ancho de pantalla de 481px, se aplicaran los estilos para una pantalla de escritorio de tal manera 
+que se vea de acuerdo a lo requerido en un ancho de 1440px*/
+
+@media (min-width: 481px) {
+
+    /* Aplicación de estilos agrupando propiedades comunes de varios elementos en una única regla CSS */
+
+    .seccionPadel, .seccionDiferenciasPros, .seccionDiferencias, .seccionMejorDelMes, .seccionMejorEquipoDelAño, footer {
+        flex-direction: row;
+    }
+
+    .ocultar, .seccionDiferenciasPros, .seccionDiferencias, .seccionMejorEquipoDelAño {
+        align-items: center;
+    }
+    
+    .seccionDiferencias, .seccionMejorDelMes, footer {
+        flex-wrap: wrap;
+    }
+
+    .seccionDiferencias, .articulePadel {
+        justify-content: space-evenly;
+    }
+
+    footer, .seccionMejorEquipoDelAño {
+        justify-content: space-between;
+    }
+
+    /* Aplicación de estilos para definir las propiedades específicas necesarias para cada elemento */
+    
+    .ocultar {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+    .ocultarEscritorio {
+        display: none;
+    }
+
+    .seccionPadel {
+        height: 32vw;
+    }
+
+    .imagenPadel {
+        width: 45%;
+    }
+
+    .articulePadel {
+        width: 42%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .seccionDiferenciasPros {
+        height: 12vw;
+        padding-left: 13vw;
+        padding-right: 20vw;
+    }
+
+    .seccionCelesteBlanco {
+        background-color: #8B48BF;
+    }
+
+    .h2seccionDiferenciasPros {
+        width: 100vw;
+        padding-right: 7vw;
+    }
+
+    .seccionDiferencias {
+        background-color: #FAFAFA;
+        height: 35vw;
+        padding: 40px 0px 0px 0px;
+        margin: 0px;
+    }
+
+    h4 {
+        background-color: transparent;
+    }
+
+    .articuleSeccionDiferencias {
+        width: 37vw;
+    }
+
+    .parrafoSeccionDiferencias {
+        padding-left: 80px;
+        padding-right: 0px;
+    }
+
+    .seccionMejorDelMes {
+        margin: 5.5vw 3.5vw;
+    }
+
+    .testimonios {
+        width: 31vw;
+    }
+
+    .mejorDelMes {
+        width: 100vw;
+    }
+
+    .seccionMejorEquipoDelAño {
+        height: 15vw;
+        padding-left: 10vw;
+        padding-right: 13vw;
+    }
+
+    .h2seccionMejorEquipoDelAño {
+        width: 35vw;
+        text-align: left;
+    }
+
+    .botonAzulOscuro {
+        background-color: #FFFFFF;
+        color: #8B48BF;
+    }
+
+    footer {
+        align-items: flex-start;
+        padding: 0px 10vw 0px 10vw;
+    }
+    
+    .logoFooter {
+        margin-right: 5vw;
+    }
+
+    div {
+        order:1;
+        width: 11vw;
+    }
+
+    .listaFooter {
+        margin-bottom: 0px;
+        margin-right: 7.5vw;
+        margin-left: 7.5vw;
+    }
+
+    input {
+        width: 15vw;
+    }
+    
+    form {
+        width: 22vw;
+        margin-left: 4vw;
+    }
+
+    .derechosReservados {
+        order:2;
+        padding-right: 3vw;
+    }
+
+}

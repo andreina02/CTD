@@ -1,0 +1,22 @@
+/* Get to know the best teams of the year */
+
+width: 324px;
+height: 192px;
+
+font-family: 'Be Vietnam';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.005em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

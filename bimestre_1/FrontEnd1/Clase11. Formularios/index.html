@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <p class="Descuento">Descuentos 20% en todos los productos!</p>
+        <div class="colorAzul">
+            <img src="img/Logo.png" alt="Logo">
+            <span>Nombre Tienda</span>
+        </div>
+        <nav>
+            <ul>
+                <a href="">Contacto</a>
+                <a href="">Registrarme</a>
+                <a href="">Ingresar</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="colorAzul center">
+        <h1>Añadí tu super!</h1>
+        <p class="personaje">Agregá tu personaje favorito completando las opciones</p>
+        <form action="">
+            <section>
+                <articule class="uno">
+                    <!-- <h1>Anadí tu super!</h1>
+                    <p>Agregá tu personaje favorito completando las opciones</p> -->
+                    <label for="nombre">Nombre:</label>
+                    <input class="nombre" name="nombre" type="text" id="nombre" required>
+                </articule>
+
+                <articule class="uno">
+                    <label for="fecha">Fecha:  </label>
+                    <input name="fecha" type="date" id="fecha">
+                    <!-- <input name="fecha" type="date"> -->
+                </articule>
+
+                <articule class="dos">
+                    <!-- <label for="descripcion">Descripcion</label> -->
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10">
+                    </textarea>
+                </articule>
+
+                <articule class="uno">
+                    <label for="especie">Especie:</label>
+                    <select name="especie" id="especie" required>
+                    <option value="Humano">Humano</option>
+                    <option value="No humano">No humano</option>
+                    </select>
+                </articule>
+
+                <articule class="uno">
+                    <label for="foto">Agregar foto</label>
+                    <input name="foto" type="file" id="foto" accept=".jpg" multiple>  
+                </articule>
+            
+                <article class="radio-checkbox">
+                    <p>Poderes</p>
+                    <label> <input type="checkbox" name="Poder" value="Volar">Volar</label>
+                    <label> <input type="checkbox" name="Poder" value="SuperInteligencia">SuperInteligencia</label>
+                    <label> <input type="checkbox" name="Poder" value="Vista de rayos láser">Vista de rayos láser</label>
+                    <label> <input type="checkbox" name="Poder" value="Billetera gorda">Billetera gorda</label>
+
+                    <hr>
+
+                    <p>Tipo de personaje</p>
+                    <label> <input type="radio" name="tipoPersonaje" value="H">Heroe/Heroina</label>
+                    <label> <input type="radio" name="tipoPersonaje" value="V">Villano/Villana</label>
+                </article>
+            </section>
+
+            <button type="submit">Añadir</button>
+            <!-- <input type="submit" value="Añadir">     -->
+        </form>
+    </main>
+
+    <footer>
+        <p class="footer colorAzul">Todos los derechos reservados a FRONT END I</p>
+    </footer>
+    
+</body>
+</html>
